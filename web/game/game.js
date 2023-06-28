@@ -158,6 +158,7 @@ const submitScore= (state) => {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
+        'origin': 'https://d3vbn0ixkks4al.cloudfront.net',
         'AccessToken': accessToken,
         'RefreshToken': refreshToken,
       },

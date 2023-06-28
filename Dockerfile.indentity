@@ -1,0 +1,7 @@
+FROM node:16
+WORKDIR /identityProvider
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 8080
+CMD [ "npm", "run-script", "start:identity" ]
