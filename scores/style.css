@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: "Courier New", monospace;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+main {
+  background-color: #fbac91;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  box-shadow: 0px 5px 10px;
+  display: flex;
+  width: 70%;
+  margin: 5rem auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: 400;
+  font-size: large;
+  font-family: "Rubik", sans-serif;
+}
+
+tr {
+  background-color: #fbac91;
+}
+
+tr:not(:first-child):hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px 8px #f1c8ba;
+}
+
+tr:nth-child(odd) {
+  background-color: #f5b099;
+}
+
+tr:nth-child(2) {
+  color: rgb(24, 209, 24);
+}
+th {
+  background-color: #fbac91;
+  color: #000;
+}
+
+.table-heading {
+  width: 7rem;
+}
+td {
+  height: 5rem;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.score-count {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.fa {
+  margin: 0.3rem;
+}
+
+.fa:hover {
+  color: #504d4d;
+}
+
+header {
+  background-color: #90c9bf;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+  height: 3.125rem;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 4.688rem;
+  padding-top: 1rem;
+  position: relative;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+
+  font-size: 1.25rem;
+  font-family: "Courier New", monospace;
+  font-weight: 800;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #000;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  main {
+    display: block;
+    overflow-x: scroll;
+  }
+}

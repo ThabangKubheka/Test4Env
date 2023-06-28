@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Papers, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link 
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+    rel="stylesheet"  type='text/css'>
+  </head>
+  <body>
+    <header id="header-styles">
+      <i class="fa fa-home"
+      style="font-size: 36px"
+      ></i>
+      <nav>
+        <ul>
+          <li><a href="/login" onclick="logout()">Sign Out</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>SCOREBOARD</h1>
+
+      <table id="table">
+        <tbody id="table-body">
+          <th></th>
+          <th></th>
+          <th class="table-heading">WINS</th>
+          <th class="table-heading">LOSSES</th>
+          <th class="table-heading">OVERALL</th>
+        </tbody>
+      </table>
+    </main>
+    <script type="text/javascript" src="scoreboard.js"></script>
+  </body>
+</html>

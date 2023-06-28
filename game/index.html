@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+
+    <nav>
+        <a href="../player/" class="active">Home</a>
+        <a href="../scores/" class="active">Scoreboard</a>
+        <a href="../login/" class="active" onclick="logout()">Log-out</a>
+    </nav>
+    
+    <header>
+        <h1>Rock Paper Scissors Game</h1>
+    </header>
+
+    <main>
+        <section class="cards">
+            <figure class="card">
+                <img src="rock.png" alt="Rock" width="100">
+            </figure>
+            <figure class="card">
+                <img src="paper.png" alt="Paper" width="100">
+            </figure>
+            <figure class="card">
+                <img src="scissor.png" alt="Scissor" width="100">
+            </figure>
+        </section>
+
+        <section class="scoreboard">
+            <div class="player">
+                <h2>Player</h2>
+                <p id="player-score">0</p>
+                <div class="selected-card">
+                    <h3>Selected Card</h3>
+                    <img src="" alt="" width="100">
+                </div>
+            </div>
+            <div class="computer">
+                <h2>Computer</h2>
+                <p id="computer-score">0</p>
+                <div class="selected-card">
+                    <h3>Selected Card</h3>
+                    <img src="" alt="" width="100">
+                </div>
+            </div>
+        </section>
+
+        <section class="result">
+            <h2>Result</h2>
+            <div class="winner-card">
+                <p id="result"></p>
+            </div>
+        </section>
+
+        <div id="timer" class="timer"></div>
+        <button id="replay-button" class="replay-button">Replay</button>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>

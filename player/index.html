@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock, Papers Scissors</title>
+  <link rel="stylesheet" href="playerPage.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+</head>
+
+<body>
+  <header id="header-styles">
+    <nav id="topNav">
+      <ul>
+        <li><a href="/login" onclick="logout()">Sign Out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Rock, Papers Scissors</h1>
+
+    <section id="profile" class="box">
+      <h3 id="name"></h3>
+      <h3>Wins:</h3>
+      <h3 id="wins"></h3>
+      <h3>Losses:</h3>
+      <h3 id="losses"></h3>
+    </section>
+	
+	<nav id="playerNav" class="box">
+	  <ul>
+        <li><a href="/game">Start Game</a></li>
+		<li><a href="/scores">Score Board</a></li>
+      </ul>
+	</nav>
+
+  </main>
+
+  <script type="text/javascript" src="playerPage.js"></script>
+</body>
+
+</html>
